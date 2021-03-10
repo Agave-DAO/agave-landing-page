@@ -342,6 +342,10 @@ p {
   letter-spacing: 1px;
 }
 
+.footer-title.custom-footer {
+  display: none;
+}
+
 .container-2 {
   width: 100%;
   max-width: 1247px;
@@ -1014,6 +1018,14 @@ p {
     grid-template-columns: 2fr;
     -ms-grid-rows: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
+  }
+
+  .footer-title.custom {
+    display: none;
+  }
+
+  .footer-title.custom-footer {
+    display: block;
   }
 
   .footer-01 {

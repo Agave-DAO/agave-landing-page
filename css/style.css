@@ -67,7 +67,7 @@ html.w-mod-touch * {
 .w-button {
   display: inline-block;
   padding: 9px 15px;
-  background-color: #3898EC;
+  background-color: #3898ec;
   color: white;
   border: 0;
   line-height: inherit;
@@ -127,7 +127,7 @@ p {
 blockquote {
   margin: 0 0 10px 0;
   padding: 10px 20px;
-  border-left: 5px solid #E2E2E2;
+  border-left: 5px solid #e2e2e2;
   font-size: 18px;
   line-height: 22px;
 }
@@ -240,7 +240,7 @@ label {
 }
 .w-input:focus,
 .w-select:focus {
-  border-color: #3898EC;
+  border-color: #3898ec;
   outline: 0;
 }
 .w-input[disabled],
@@ -390,7 +390,6 @@ textarea.w-select {
   height: 20px;
 }
 .w-container {
-  margin-left: auto;
   margin-right: auto;
   max-width: 940px;
 }
@@ -1148,7 +1147,7 @@ textarea.w-select {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   background: rgba(0, 0, 0, 0.4);
   text-align: left;
   text-overflow: ellipsis;
@@ -1172,8 +1171,8 @@ textarea.w-select {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .w-lightbox-left {
   display: none;
@@ -1234,7 +1233,7 @@ textarea.w-select {
   /* 2 */
 }
 .w-lightbox-active {
-  opacity: .3;
+  opacity: 0.3;
 }
 .w-lightbox-thumbnail {
   position: relative;
@@ -1278,8 +1277,8 @@ textarea.w-select {
   margin-left: -20px;
   border: 5px solid rgba(0, 0, 0, 0.4);
   border-radius: 50%;
-  -webkit-animation: spin .8s infinite linear;
-  animation: spin .8s infinite linear;
+  -webkit-animation: spin 0.8s infinite linear;
+  animation: spin 0.8s infinite linear;
 }
 .w-lightbox-spinner:after {
   content: "";
@@ -1327,10 +1326,10 @@ textarea.w-select {
   .w-lightbox-left,
   .w-lightbox-right {
     display: block;
-    opacity: .5;
+    opacity: 0.5;
   }
   .w-lightbox-close {
-    opacity: .8;
+    opacity: 0.8;
   }
   .w-lightbox-control:hover {
     opacity: 1;
@@ -1370,7 +1369,7 @@ textarea.w-select {
 }
 .w-richtext figure.w-richtext-figure-type-video > div:after,
 .w-richtext figure[data-rt-type="video"] > div:after {
-  content: '';
+  content: "";
   position: absolute;
   display: none;
   left: 0;
@@ -1383,7 +1382,7 @@ textarea.w-select {
   max-width: 60%;
 }
 .w-richtext figure > div:before {
-  cursor: default!important;
+  cursor: default !important;
 }
 .w-richtext figure img {
   width: 100%;
@@ -1514,7 +1513,7 @@ textarea.w-select {
   top: 100%;
   left: 0;
   right: 0;
-  background: #C8C8C8;
+  background: #c8c8c8;
   text-align: center;
   overflow: visible;
   min-width: 200px;
@@ -1571,7 +1570,7 @@ textarea.w-select {
   outline: 0;
 }
 .w-nav-button.w--open {
-  background-color: #C8C8C8;
+  background-color: #c8c8c8;
   color: white;
 }
 .w-nav[data-collapse="all"] .w-nav-menu {
@@ -1646,7 +1645,7 @@ textarea.w-select {
   background-color: #dddddd;
 }
 .w-tab-link.w--current {
-  background-color: #C8C8C8;
+  background-color: #c8c8c8;
 }
 .w-tab-link:focus {
   outline: 0;

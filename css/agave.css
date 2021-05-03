@@ -512,12 +512,13 @@ p {
   font-size: 14px;
 }
 .image-8 {
-  position: absolute;
+  position: relative;
   left: 15%;
   top: 0;
   right: auto;
   bottom: 29%;
   max-width: 90%;
+  z-index: -1;
 }
 
 .min-navbar {
@@ -600,8 +601,9 @@ p {
 }
 
 .lottie-animation {
-  margin-left: 161px;
-  padding-bottom: 94px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
 }
 
 .span {
@@ -716,7 +718,7 @@ p {
   }
 
   .right-block {
-    margin: 40px 76px 0px;
+    margin: 0px 76px 0px;
   }
  
 
@@ -779,7 +781,7 @@ p {
   }
   
   .body-section.has-neg-margin{
-    margin-top: -100px;
+    margin-top: -250px;
   }
   .no-link {
     background-color: #2e2e2e;
@@ -825,8 +827,10 @@ p {
 
   .image-8 {
     left: 10%;
-    bottom: 18%;
     max-width: 80%;
+    z-index: -1;
+    top: -50px;
+    height: 750px;
   }
 
   .menu-button {
@@ -884,9 +888,10 @@ p {
   }
 
   .lottie-animation {
-    margin-right: 85px;
-    margin-left: 120px;
     padding-bottom: 0px;
+    position: absolute;
+    top: 20%;
+    right: 18%;
   }
 
   .div-block-14 {
@@ -929,7 +934,6 @@ p {
     max-width: 650px;
   }
   .container {
-    margin-bottom: 50px;
     max-width: 650px;
   }
 
@@ -988,7 +992,7 @@ p {
   }
 
   .body-section.has-neg-margin{
-    margin-top: -201px;
+    margin-top: -275px;
   }
   .flexbox.hero-flexbox {
     -webkit-box-orient: vertical;
@@ -1066,19 +1070,17 @@ p {
   }
 
   .image-8 {
-    left: 29px;
-    bottom: 17%;
+    position: relative;
+    height: 350px;
+    width: 100%;
   }
 
   .lottie-animation {
-    margin-right: 34px;
-    margin-left: 48px;
-    padding-bottom: 0px;
+    position: absolute;
+    top: 18%;
   }
 
-  .div-block-14 {
-    margin-right: auto;
-  }
+  
 
   .div-block-15 {
     display: -webkit-box;
@@ -1120,7 +1122,7 @@ p {
     padding-top: 0;
   }
   .body-section.has-neg-margin{
-    margin-top: -195px;
+    margin-top: -250px;
   }
   .button {
     margin-bottom: 15px;
@@ -1239,9 +1241,14 @@ p {
     -ms-flex-align: center;
     align-items: center;
   }
-
+  .image-8{
+    height: 350px;
+    position: relative;
+    z-index: -1;
+  }
   .lottie-animation {
-    margin-top: 19px;
+    position: absolute;
+    top: 18%;
   }
   .block{
     width: 100%;

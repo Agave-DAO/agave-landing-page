@@ -29,10 +29,11 @@ body {
   margin: 0;
   min-height: 100%;
   background-color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;

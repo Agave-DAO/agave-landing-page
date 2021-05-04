@@ -1359,6 +1359,8 @@ p {
   .image-2.image-mobile{
     display: block;
     padding: 0;
+    padding-left: 8px;
+    padding-bottom: 4px;
   }
   .navbar{
     align-items: center;

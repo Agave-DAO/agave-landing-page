@@ -1336,6 +1336,12 @@ p {
     float: right;
     display: block;
   }
+ 
+  .menu-links a.icon .menuIcon{
+    background-color: white;
+    border-radius: 4px;
+    color: #019D8B;
+  }
   .menu-links.responsive {
     position: absolute;
     top: 70%;

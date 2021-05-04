@@ -70,21 +70,23 @@
     <!--  End Google Tag Manager (noscript)  -->
   </div>
   <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
-    <div class="nav-container w-container">
-      <a href="index.html" aria-current="page" class="w-nav-brand w--current"><img src="images/logo.svg" loading="lazy"
-          alt="logo" class="image-2" /></a>
-      <a href="index.html" aria-current="page" class="w-nav-brand w--current"><img src="images/mobile-ag-logo.svg" loading="lazy"
-          alt="logo" class="image-2 image-mobile" /></a>
-    </div>
-    <div class="menu-links" id="myTopnav">
-      <a href="/">Staking</a>
-      <a href="/">Governance</a>
-      <a href="/">NFTS</a>
-      <a class="icon" onclick="toggleMenu()">
-        <span class="menuIcon material-icons">
-          menu
-        </span>
-      </a>
+    <div class="nav-wrapper">
+      <div class="nav-container w-container">
+        <a href="index.html" aria-current="page" class="w-nav-brand w--current"><img src="images/logo.svg"
+            loading="lazy" alt="logo" class="image-2" /></a>
+        <a href="index.html" aria-current="page" class="w-nav-brand w--current"><img src="images/mobile-ag-logo.svg"
+            loading="lazy" alt="logo" class="image-2 image-mobile" /></a>
+      </div>
+      <div class="menu-links" id="myTopnav">
+        <a href="/">Staking</a>
+        <a href="/">Governance</a>
+        <a href="/">NFTS</a>
+        <a class="icon" onclick="toggleMenu()">
+          <span class="menuIcon material-icons">
+            menu
+          </span>
+        </a>
+      </div>
     </div>
   </div>
   <div class="hero-section">
@@ -230,17 +232,21 @@
         <div class="w-layout-grid footer-grid-01">
           <div id="w-node-dce6f28e-771e-b2ad-7517-b2281a212649-1a212625" class="footer-column">
             <img src="images/agave_footer_logo.svg" />
-            <div class="footer-title">© 2021 Agave DAO | All Rights Reserved<br /></div>
+            
           </div>
           <div class="footer-column">
-            <div class="footer-title">Staking</div>
-            <div class="footer-title">NFTs</div>
-            <div class="footer-title">Forum</div>
-          </div>
-          <div class="footer-column">
-            <div class="footer-title">Governance</div>
-            <div class="footer-title">Coingecko</div>
-            <div class="footer-title">Bug Bounty</div>
+            <div class="column-items">
+              <div class="footer-col">
+                <div class="footer-title">Staking</div>
+                <div class="footer-title">NFTs</div>
+                <div class="footer-title">Forum</div>
+              </div>
+              <div class="footer-col">
+                <div class="footer-title">Governance</div>
+                <div class="footer-title">Coingecko</div>
+                <div class="footer-title">Bug Bounty</div>
+              </div>
+            </div>
           </div>
           <div class="footer-column custom">
             <span><strong>Join The Conversation</strong><br />
@@ -259,6 +265,7 @@
 
           </div>
         </div>
+        <div class="footer-title">© 2021 Agave DAO | All Rights Reserved<br /></div>
       </div>
     </div>
   </div>
@@ -325,16 +332,7 @@
         ["Seeds", 4.6],
       ]);
       var options = {
-        legend: {
-          position: 'bottom',
-          textStyle: {
-            fontSize: '14px',
-            color: '#007C6E',
-            fontWeight: '400',
-            lineHeight: '19.6px',
-            fontName: 'Baloo 2'
-          }
-        },
+        legend: 'none',
         colors: ["#36CFA2", "#D75A08", "#007C6E", "#FFC01B", "#E68C21"],
         backgroundColor: "transparent",
         is3D: true,

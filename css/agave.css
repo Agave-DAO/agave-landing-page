@@ -641,8 +641,9 @@ p {
 
 .lottie-animation {
   position: absolute;
-  top: 10%;
-  left: 20%;
+  top: 5%;
+  left: 22%;
+  width: 600px;
 }
 
 .span {
@@ -729,7 +730,9 @@ p {
   .container{
     max-width: 1250px;
   }
-
+  .lottie-animation {
+    width: 550px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -930,8 +933,9 @@ p {
   .lottie-animation {
     padding-bottom: 0px;
     position: absolute;
-    top: 20%;
-    right: 18%;
+    top: 15%;
+    left: 17%;
+    width: 350px;
   }
 
   .div-block-14 {
@@ -1122,7 +1126,7 @@ p {
 
   .lottie-animation {
     position: absolute;
-    top: 18%;
+    top: 12%;
   }
 
   

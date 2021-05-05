@@ -277,7 +277,8 @@
     $(document).ready(() => {
       window.addEventListener('resize', () => {
         let imageHeight = $('.image-8').outerHeight()
-        console.log(imageHeight)
+        let imageWidth = $('.image-8').outerWidth()
+        $('.lottie-animation').css('width', (imageWidth * 0.85))
         if ($(window).width() > 1024) {
           $('.hero-section').css('max-height', imageHeight)
         }
@@ -288,7 +289,8 @@
       })
       window.addEventListener('load', () => {
         let imageHeight = $('.image-8').outerHeight()
-        console.log(imageHeight)
+        let imageWidth = $('.image-8').outerWidth()
+        $('.lottie-animation').css('width', (imageWidth * 0.85))
         if ($(window).width() > 1024) {
           $('.hero-section').css('max-height', imageHeight)
         }

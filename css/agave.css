@@ -473,8 +473,8 @@ p {
 .footer-grid-01 {
   grid-column-gap: 31px;
   grid-row-gap: 35px;
-  -ms-grid-columns: 1fr 0.75fr 0.75fr 0.5fr;
-  grid-template-columns: 1fr 0.75fr 0.75fr 0.5fr;
+  -ms-grid-columns: 1fr 0.75fr 0.75fr;
+  grid-template-columns: 1fr 0.75fr 0.75fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }

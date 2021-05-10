@@ -494,6 +494,10 @@ p {
   display: none;
 }
 
+.footer-anchor {
+	text-decoration: none;
+}
+
 .container-2 {
   width: 100%;
   max-width: 1247px;

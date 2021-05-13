@@ -1,3 +1,7 @@
+body{
+  font-family: 'droid_sansregular', 'Arial', 'sans-serif' !important;
+}
+
 .w-icon-slider-right:before {
   content: "\e600";
 }

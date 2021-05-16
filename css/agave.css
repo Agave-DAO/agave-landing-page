@@ -92,6 +92,13 @@ p {
   display: flex;
   padding: 0 50px 0 0;
   color: #ffffff;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.section-item img{ 
+  padding: 5px;
+  padding-bottom: 15px;
+  margin-right: 10px;
 }
 
 .section-item img{
@@ -99,6 +106,8 @@ p {
 }
 .section-item .item-title{
   font-size: 24px;
+  max-width: 50%;
+  padding-top: 10px;;
 }
 .section-item .item-content{
   font-size: 17px;
@@ -125,12 +134,28 @@ p {
   -ms-flex-align: center;
   align-items: center;
 }
-
+.chart-section-header{
+  text-align: left;
+  color: #007C6E;
+}
+.chart-section-header h4 {
+  padding: 30px 0;
+  font-size: 36px;
+  line-height: 50px;
+}
 .container.custom-container.custom-bottom {
   margin-top: 72px;
   margin-bottom: 0px;
 }
-
+.block-chart .w-embed{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+.block-chart .w-embed .chart{
+  padding: 10px 0;
+}
 .button {
   padding: 16px 27px;
   border-radius: 12px;
@@ -166,7 +191,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin-left: 35px;
-  padding: 16px 38px;
+  padding: 8px 12px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -182,13 +207,13 @@ p {
   align-items: center;
   border-style: solid;
   border-width: 1px;
-  border-color: #00aa96;
+  border-color: #979797;
   border-radius: 12px;
   background-color: transparent;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   font-family: 'droid_sansregular', sans-serif;
-  color: #00aa96;
+  color: #979797;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -221,6 +246,7 @@ p {
 .block.block-text{
   color: #007C6E !important;
   font-family: "droid_sansregular", sans-serif;
+
 }
 .gradient-background{
   background: linear-gradient(90.53deg, rgba(155, 239, 215, 0.5) 0%, rgba(139, 247, 171, 0.5) 47.4%, rgba(255, 212, 101, 0.5) 100%);
@@ -259,7 +285,9 @@ p {
 .text-span {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28.6px;
   letter-spacing: 1px;
 }
 
@@ -499,7 +527,13 @@ p {
   font-weight: 400;
   letter-spacing: 1px;
 }
-
+.footer-title a{
+  color: white;
+  text-decoration: none;
+}
+.footer-title a:hover{
+  text-decoration: underline;
+}
 .footer-title.custom-footer {
   display: none;
 }
@@ -639,9 +673,9 @@ p {
 }
 
 .text-block-3 {
-  padding-top: 16px;
   font-family: "droid_sansregular", sans-serif;
   text-decoration: none;
+  padding: 5px 0px;
 }
 
 .image-16 {
@@ -770,6 +804,8 @@ p {
     margin-left: 14px;
     padding: 10px 21px;
     font-size: 14px;
+    color: #979797;
+    border-color: #979797;
   }
 
   .left-block {
@@ -857,7 +893,7 @@ p {
   .paragraph-show {
     font-size: 16px;
     line-height: 25px;
-    text-align: center;
+    text-align: left;
   }
 
   .paragraph-show.margin-bottom {
@@ -1085,7 +1121,7 @@ p {
   }
 
   .paragraph-show {
-    text-align: center;
+    text-align: left;
   }
 
   .paragraph-show.margin-bottom.hide {
@@ -1183,11 +1219,23 @@ p {
     padding-top: 35px;
     padding-bottom: 66px;
   }
+  .nav-container .w--current{
+    margin-right: -5px;
+  }
   .container{
-    max-width: 300px;
+    max-width: 350px;
   }
   .container.chart-container{
     padding-top: 0;
+  }
+  .chart-section-header{
+    text-align: center;
+    color: #007C6E;
+  }
+  .chart-section-header h4 {
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .body-section.has-neg-margin{
     margin-top: -250px;
@@ -1211,7 +1259,7 @@ p {
   }
 
   .left-block {
-    min-width: 227px;
+    min-width: 350px;
     margin-top: -39px;
   }
   .partners-images{
@@ -1257,7 +1305,7 @@ p {
   .paragraph-show.margin-bottom.show {
     display: block;
     font-size: 15px;
-    text-align: center;
+    text-align: left;
   }
 
   .footer-grid-01 {
@@ -1270,7 +1318,6 @@ p {
     height: 480px;
     margin-bottom: 30px;
   }
-
   .footer-title.custom {
     display: none;
   }
@@ -1361,9 +1408,9 @@ p {
   }
  
   .menu-links a.icon .menuIcon{
-    background-color: white;
+    background-color: #00A490;
     border-radius: 4px;
-    color: #019D8B;
+    color: white;
   }
   .menu-links.responsive {
     position: absolute;

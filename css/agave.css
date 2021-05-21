@@ -196,7 +196,10 @@ p {
   margin-bottom: 170px;
   max-width: 40%;
 }
-
+.right-block {
+	position: relative;
+	margin: -14px 20px 33px -93px;
+  }
 
 .block{
   width: 40%;

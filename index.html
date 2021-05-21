@@ -20,10 +20,10 @@
   <meta property="og:image" content="https://agave.finance/images/twitter-card.webp" />
   <meta content="summary_large_image" name="twitter:card" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+  <meta http-equiv = "content-language" content = "en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/agave.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">
     WebFont.load({
@@ -32,7 +32,8 @@
           "Poppins:regular,500,600,700",
           "Overpass:200,300,regular",
           "Baloo 2:regular,500,600,700",
-          "Droid: regular,400,500,700"
+          "Droid: regular,400,500,700",
+		  "Material+Icons"
         ],
       },
     });
@@ -48,33 +49,16 @@
     })(window, document);
   </script>
   <link href="images/favicon.svg" rel="shortcut icon" type="image/x-icon" />
-  <link href="images/webclip.svg" rel="apple-touch-icon" />
-  <!--  Global site tag (gtag.js) - Google Analytics  -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HJGE6LYNWL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-HJGE6LYNWL");
-  </script>
-  <!--  End of gtag.js  -->
+  <link href="images/favicon.svg" rel="apple-touch-icon" />
 </head>
 
 <body>
-  <div class="w-embed w-iframe">
-    <!--  Google Tag Manager (noscript)  -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRPPBGM" height="0" width="0"
-        style="display: none; visibility: hidden"></iframe></noscript>
-    <!--  End Google Tag Manager (noscript)  -->
-  </div>
   <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
     <div class="nav-wrapper">
       <div class="nav-container w-container">
-        <a href="index.html" aria-current="page" class="w-nav-brand w--current"><img src="images/logo.svg"
+        <a aria-current="page" class="w-nav-brand w--current"><img src="images/logo.svg"
             loading="lazy" alt="logo" class="image-2" /></a>
-        <a href="index.html" aria-current="page" class="w-nav-brand w--current"><img src="images/mobile-ag-logo.svg"
+        <a aria-current="page" class="w-nav-brand w--current"><img src="images/mobile-ag-logo.svg"
             loading="lazy" alt="logo" class="image-2 image-mobile" /></a>
       </div>
       <div class="menu-links" id="myTopnav">
@@ -95,7 +79,7 @@
       <div class="flexbox hero-flexbox">
         <div class="left-block">
           <h1 class="hero-heading">
-            <span class="text-span">Agave is a DeFi lending <br />protocol - </span>built on xDai
+            <span class="text-span">Agave is a DeFi lending <br/>protocol - </span>built on xDai
           </h1>
           <div class="div-block-15">
             <p class="paragraph-hide">
@@ -113,14 +97,14 @@
           <div class="div-block-6">
             <a href="https://app.agave.finance/#/stake" class="button w-button stake-cta"><span
                 class="stake-cta-text">STAKE</span></a>
-            <a href="#" class="ghost-button w-inline-block"><img src="images/soon.svg" loading="lazy" alt=""
+            <a href="#" class="ghost-button w-inline-block"><img src="images/soon.svg" loading="lazy" alt="STAKE"
                 class="image-16" />
               <div class="text-block-3">Lending Platform</div>
             </a>
           </div>
         </div>
         <div class="right-block">
-          <img src="images/bg_img.svg" loading="lazy" alt="" class="image-8" />
+          <img src="images/bg_img.svg" loading="fast" alt="." class="image-8" />
           <div data-w-id="c9bd5ddc-961c-24d2-c677-25f608ea0658" data-animation-type="lottie"
             data-src="documents/alvin.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
             data-renderer="svg" data-default-duration="3.1089848553803816" data-duration="0" class="lottie-animation">
@@ -136,7 +120,7 @@
       </div>
       <div class="section-wrapper">
         <div class="section-item">
-          <img src="images/key_features_1.svg" />
+          <img src="images/key_features_1.svg" alt="."/>
           <div class="content">
             <h4 class="item-title">Community driven</h4>
             <span class="item-content">
@@ -146,7 +130,7 @@
           </div>
         </div>
         <div class="section-item">
-          <img src="images/key_features_2.svg" />
+          <img src="images/key_features_2.svg" alt="."/>
           <div class="content">
             <h4 class="item-title">xDai Native</h4>
             <span class="item-content">
@@ -156,7 +140,7 @@
           </div>
         </div>
         <div class="section-item">
-          <img src="images/key_features_3.svg" />
+          <img src="images/key_features_3.svg" alt="."/>
           <div class="content">
             <h4 class="item-title">Global</h4>
             <span class="item-content">
@@ -172,7 +156,7 @@
     <div class="container body-section-container chart-container">
       <div class="flexbox chart-section">
         <div class="block block-text">
-          <h1 class="hero-heading"><span class="text-span">Token Distribution</span></h1>
+          <h3 class="hero-heading"><span class="text-span">Token Distribution</span></h3>
           <span class="paragraph-show"><strong>$AGVE Total supply: 100 000</strong></span>
           <p class="paragraph-show margin-bottom">
             <strong>Treasury (72%)</strong> - The Agave treasury is for the community to decide its distribution.
@@ -220,8 +204,8 @@
           <h2><strong>Partners and Integrations</strong></h2>
         </div>
         <div class="partners-images">
-          <img src="images/1hive_bee.svg" />
-          <img src="images/xdai_logo.svg" />
+          <img src="images/1hive_bee.svg" alt="1hive"/>
+          <img src="images/xdai_logo.svg" alt="xDAI"/>
         </div>
       </div>
     </div>
@@ -232,7 +216,7 @@
       <div class="container">
         <div class="w-layout-grid footer-grid-01">
           <div id="w-node-dce6f28e-771e-b2ad-7517-b2281a212649-1a212625" class="footer-column">
-            <img src="images/agave_footer_logo.svg" />
+            <img src="images/agave_footer_logo.svg" alt="logo"/>
             
           </div>
           <div class="footer-column">
@@ -250,18 +234,18 @@
             </div>
           </div>
           <div class="footer-column custom">
-            <span><strong>Join The Conversation</strong><br />
+            <span claas="text-span">Join The Conversation<br />
               Come and join our growing community to learn more about our plans, share your feedback and feature
               requests with us, or to get involved as a contributor</span>
             <div class="social-icons">
-              <a href="https://t.me/Agave1Hive" target="_blank" class="w-inline-block"><img src="images/telegramm.svg"
-                  loading="lazy" alt="" class="image-17" /></a>
-              <a href="https://twitter.com/Agave_lending" target="_blank" class="w-inline-block"><img
-                  src="images/twitter.svg" loading="lazy" alt="" class="image-18" /></a>
+              <a href="https://t.me/Agave1Hive" target="_blank" class="w-inline-block"><img src="images/telegram.svg"
+                  loading="lazy" alt="telegram" class="image-17" /></a>
+              <a href="https://twitter.com/Agave_lending" target="_blank" class="w-inline-block" ><img
+                  src="images/twitter.svg" loading="lazy" alt="twitter" class="image-18" /></a>
               <a href="https://discord.gg/SstXTj6xgp" target="_blank" class="w-inline-block"><img
-                  src="images/discord.svg" loading="lazy" alt="" class="image-18" /></a>
+                  src="images/discord.svg" loading="lazy" alt="discord" class="image-18" /></a>
               <a href="https://agavefinance.medium.com/" target="_blank" class="w-inline-block"><img
-                  src="images/medium.svg" loading="lazy" alt="" /></a>
+                  src="images/medium.svg" loading="lazy" alt="medium" /></a>
             </div>
 
           </div>
@@ -312,12 +296,6 @@
         x.className = "menu-links";
       }
     }
-  </script>
-
-  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
-  <script>
-    new ClipboardJS(".clipboard");
   </script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">

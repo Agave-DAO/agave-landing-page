@@ -66,6 +66,9 @@ p {
 .container.no-margin-bottom{
   margin-bottom: 0;
 }
+.container.no-padding-bottom{ 
+  padding-bottom: 0;
+}
 .container.body-section-container{
   padding-top: 120px;
 }
@@ -100,7 +103,53 @@ p {
   padding-bottom: 15px;
   margin-right: 10px;
 }
+.social-section{
+  position: relative;
+  justify-content: space-between;
 
+}
+.social-content{
+  position: absolute;
+  top: -5%;
+  max-width: 400px;
+  color: #007C6E;
+}
+.social-content h1{
+  padding-bottom: 20px;
+  font-size: 36px;
+}
+.social-content p {
+  font-size: 17px;
+}
+.tweet-container{
+  position: relative;
+  background: #007C6E;
+  height: 380px;
+  width: 500px;
+  margin-bottom: 50px;
+  opacity: 0.8;
+  border-top: 44px solid #00A490;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 44px solid #00A490;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.tweet-container .headline-text{
+  color: #ffffff;
+  position: absolute;
+  top: -30px;
+  padding-left: 23px;
+}
+.tweet-container .footer-text{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -40px;
+  padding: 0 12px;
+  color: white;
+}
 .section-item img{
   padding-right: 25px;
 }
@@ -288,7 +337,6 @@ p {
   font-weight: 700;
   font-size: 22px;
   line-height: 28.6px;
-  letter-spacing: 1px;
 }
 
 .text-span:hover {
@@ -763,7 +811,6 @@ p {
   line-height: 30px;
   font-weight: 400;
   text-align: left;
-  letter-spacing: 1px;
 }
 
 .paragraph-custom.margin-bottom {
@@ -1021,6 +1068,15 @@ p {
   .paragraph-custom.margin-bottom {
     font-size: 16px;
   }
+  .social-section {
+    flex-direction: column;
+  }
+  .tweet-container {
+    position: absolute;
+    top: 30%;
+    height: 300px;
+    left: 20%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1210,6 +1266,12 @@ p {
   .paragraph-custom {
     display: block;
     text-align: center;
+  }
+  .tweet-container {
+    position: absolute;
+    top: 35%;
+    height: 230px;
+    left: 10%;
   }
 }
 
@@ -1447,6 +1509,22 @@ p {
 
   .nav-container {
     max-width: 350px;
+  }
+  .social-container {
+    padding-top: 50px !important;
+    height: 507px;
+  }
+  .twitter-img{
+    height: 507px;
+    transform: translate(-100px, -100px);
+    min-width: 425px;
+  }
+  .tweet-container {
+    position: absolute;
+    top: 25%;
+    height: 250px;
+    width: 100%;
+    left: 0;
   }
 }
 

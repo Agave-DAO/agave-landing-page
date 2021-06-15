@@ -556,7 +556,103 @@ p {
 .paragraph-show.margin-bottom.show {
   display: none;
 }
+#tweets li {
+  padding: 20px 0;
+  position: relative;
+}
+#tweets li:not(:first-child)::before{
+  content: '';
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  top: -2%;
+  background-color: lightgrey;
+}
+#tweets ul li::marker {
+  color: #007C6E;
+}
+#tweets ul li .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+#tweets ul li .user img {
+  border-radius: 50%;
+}
+#tweets ul li .user a {
+  color: lightgrey;
+}
+#tweets ul li .user a:hover {
+  color: #00A490;
+}
+#tweets ul {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#tweets ul li .user img {
+  border-radius: 50%;
+}
+#tweets ul li .tweet {
+  color: white;
+  line-height: 14px;
+  font-size: 12px;
+}
+#tweets ul li .tweet a {
+  color: lightgrey;
+  text-decoration: none;
+}
+#tweets ul li .tweet a:hover {
+  color: #00A490;
+  text-decoration: underline;
+}
+#tweets ul li .timePosted a {
+  color: lightgrey;
+  text-decoration: none;
+}
+#tweets ul li .timePosted a:hover {
+  color: #00A490;
+  text-decoration: underline;
+}
+#tweets ul li .interact{
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  font-size: 10px;
+}
+#tweets ul li .interact > a {
+   padding-right: 5px;
+   text-decoration: none;
+   color: lightgrey;
+}
+#tweets ul li .interact > a:hover {
+  color: #00A490;
+  text-decoration: underline;
+}
+#tweets {
+  overflow-y: scroll;
+  height: 100%;
+}
+/* width */
+#tweets::-webkit-scrollbar {
+  width: 3px;
+}
 
+/* Track */
+#tweets::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+#tweets::-webkit-scrollbar-thumb {
+  background: #007C6E;
+}
+
+/* Handle on hover */
+#tweets::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .footer-grid-01 {
   grid-column-gap: 31px;
   grid-row-gap: 35px;
@@ -1321,7 +1417,7 @@ p {
   }
 
   .left-block {
-    min-width: 350px;
+    min-width: 300px;
     margin-top: -39px;
   }
   .partners-images{
@@ -1517,7 +1613,7 @@ p {
   .twitter-img{
     height: 507px;
     transform: translate(-100px, -100px);
-    min-width: 425px;
+    min-width: 400px;
   }
   .tweet-container {
     position: absolute;
@@ -1526,6 +1622,7 @@ p {
     width: 100%;
     left: 0;
   }
+
 }
 
 

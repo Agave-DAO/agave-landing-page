@@ -4,7 +4,7 @@ function createRowFromTokenInfo(tokenInfo) {
   tableRow.className = "token-row"
 
   var symbolCell = document.createElement("td")
-  symbolCell.className = "asset-cell"
+  symbolCell.className = "asset-cell token-text"
 
   var leftAssetCell = document.createElement("div")
   leftAssetCell.className = "asset"
@@ -16,7 +16,7 @@ function createRowFromTokenInfo(tokenInfo) {
   leftAssetCell.appendChild(tokenIcon)
 
   var rightAssetCell = document.createElement("div")
-  rightAssetCell.className = "asset"
+  rightAssetCell.className = "asset token-text"
   rightAssetCell.innerHTML += tokenInfo.symbol
 
   symbolCell.appendChild(leftAssetCell)
@@ -24,27 +24,27 @@ function createRowFromTokenInfo(tokenInfo) {
 
 
   var priceCell = document.createElement("td")
-  priceCell.className = "token-cell"
+  priceCell.className = "token-cell token-text"
   price = parseInt(tokenInfo.price.priceInEth, 10) / Math.pow(10, 8)
   priceCell.innerText = "$ " + price .toFixed(2)
 
   var supplyCell = document.createElement("td")
-  supplyCell.className = "token-cell"
+  supplyCell.className = "token-cell token-text"
   tokenSupply = parseInt(tokenInfo.totalATokenSupply, 10) / Math.pow(10, tokenInfo.decimals)
   supplyCell.innerText = tokenSupply.toFixed(2) + " " + tokenInfo.symbol
 
   var utilizationRateCell = document.createElement("td")
-  utilizationRateCell.className = "token-cell"
+  utilizationRateCell.className = "token-cell token-text"
   stableBorrowRate = parseFloat(tokenInfo.utilizationRate) * 100
   utilizationRateCell.innerText = stableBorrowRate.toFixed(2) + " %"
 
   var stableBorrowCell = document.createElement("td")
-  stableBorrowCell.className = "token-cell"
+  stableBorrowCell.className = "token-cell token-text"
   stableBorrowRate = parseInt(tokenInfo.stableBorrowRate, 10) / Math.pow(10, 25)
   stableBorrowCell.innerText = stableBorrowRate.toFixed(2) + " %"
 
   var variableBorrowCell = document.createElement("td")
-  variableBorrowCell.className = "token-cell"
+  variableBorrowCell.className = "token-cell token-text"
   variableBorrowRate = parseInt(tokenInfo.variableBorrowRate, 10) / Math.pow(10, 25)
   variableBorrowCell.innerText = variableBorrowRate.toFixed(2) + " %"
 

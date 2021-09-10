@@ -936,13 +936,95 @@
 	display: inline-block;
 	margin-bottom: 30px;
   }
+
+  td.token-text {
+	font-size: 18px;
+  }
+  td.header-text {
+	font-size: 20px;
+  }
+
+  .token-icon {
+	height: 45px;
+	margin-right: 10px;
+  }
+  
+  .token-row {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 80%;
+	background-color: #019D8B;
+	height: 80px;
+	display: table;
+	padding-left: 1%;
+	padding-right: 1%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-radius: 15px;
+	color: white;
+	font-weight: 600;
+	font-family: 'droid_sansregular', sans-serif;
+}
+
+.token-header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 80%;
+  display: table;
+  padding-left: 1%;
+  padding-right: 1%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td.token-cell {
+  border: #000;
+  border-width: 1px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td.cell-header {
+  font-weight: 800;
+  font-family: 'droid_sansregular', sans-serif;
+  color: #00a490;
+}
+
+.asset {
+	width: 50%;
+	display: inline;
+	text-align: center;
+}
+td.asset-cell {
+  padding-left: 3%;
+  border: #000;
+  border-width: 1px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+}
   @media screen and (max-width: 1450px) {
+	.token-row, .token-header {
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  width: 100%;
+	}
 	.nav-wrapper,
 	.container{
 	  max-width: 1250px;
 	}
 	.lottie-animation {
 	  width: 550px;
+	}
+		
+	td.token-text {
+		font-size: 16px;
+	}
+	td.header-text {
+		font-size: 18px;
 	}
   }
   @media screen and (max-width: 1300px) {
@@ -952,6 +1034,11 @@
 	}
 	.lottie-animation {
 	  width: 500px;
+	}	
+
+	.token-icon {
+		height: 35px;
+		margin-right: 10px;
 	}
   }
   @media screen and (max-width: 1024px) {
@@ -1195,6 +1282,17 @@
 	  height: 300px;
 	  left: 20%;
 	}
+
+	td.token-text {
+		font-size: 16px;
+	}
+	td.header-text {
+		font-size: 18px;
+	}
+	.token-icon {
+		height: 25px;
+		margin-right: 5px;
+	}
   }
   
   @media screen and (max-width: 768px) {
@@ -1389,6 +1487,17 @@
 	  top: 35%;
 	  height: 230px;
 	  left: 10%;
+	}
+
+	td.token-text {
+		font-size: 14px;
+	}
+	td.header-text {
+		font-size: 16px;
+	}
+	.token-icon {
+		height: 0px;
+		margin-right: 2.5px;
 	}
   }
   
@@ -1644,6 +1753,15 @@
 	  left: 0;
 	}
   
+	td.token-text {
+		font-size: 12px;
+	}
+	td.header-text {
+		font-size: 12px;
+	}
+	.token-icon {
+		height: 0px;
+	}
   }
   
   
@@ -1659,67 +1777,4 @@
 	  -ms-grid-column-align: start;
 	  justify-self: start;
 	}
-  }
-  
-  .token-row {
-	  margin-left: auto;
-	  margin-right: auto;
-	  margin-top: 10px;
-	  width: 80%;
-	  background-color: #019D8B;
-	  height: 80px;
-	  display: table;
-	  padding-left: 1%;
-	  padding-right: 1%;
-	  table-layout: fixed;
-	  border-collapse: collapse;
-	  border-radius: 15px;
-	  color: white;
-	  font-weight: 600;
-	  font-family: 'droid_sansregular', sans-serif;
-  }
-
-  .token-header {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	width: 80%;
-	display: table;
-	padding-left: 1%;
-	padding-right: 1%;
-	table-layout: fixed;
-	border-collapse: collapse;
-}
-
-  td.token-cell {
-	border: #000;
-	border-width: 1px;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-  }
-  
-  td.cell-header {
-	font-size: 20px;
-	font-weight: 800;
-	font-family: 'droid_sansregular', sans-serif;
-	color: #00a490;
-  }
-
-  .token-icon {
-	  height: 45px;
-	  margin-right: 10px;
-  }
-  .asset {
-	  width: 50%;
-	  display: inline;
-	  text-align: center;
-  }
-  td.asset-cell {
-	padding-left: 5%;
-	border: #000;
-	border-width: 1px;
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
   }

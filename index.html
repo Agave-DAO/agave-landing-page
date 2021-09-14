@@ -25,6 +25,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/agave.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript">
     WebFont.load({
       google: {
@@ -61,6 +62,7 @@
     gtag("config", "G-HJGE6LYNWL");
   </script>
   <script type="module" src='./js/getTweets.js'></script>
+  <script src='./js/getMarket.js'></script>
   <!--  End of gtag.js  -->
   <link href="images/favicon.svg" rel="apple-touch-icon" />
 </head>
@@ -163,56 +165,21 @@
     </div>
   </div>
   <div class="body-section">
-    <div class="container body-section-container chart-container">		
+    <div class="container body-section-container">		
       <span class="chart-section-header">
-			<h2>Tokenomics</h2>
-	  </span>
-      <div class="flexbox chart-section">
-        <div class="block block-text">
-          <h3 class="hero-heading">Token Distribution</h3>
-          <span class="paragraph-show"><strong>$AGVE Total supply: 100 000</strong></span>
-          <p class="paragraph-show margin-bottom">
-            <strong>Treasury (72%)</strong> - The Agave treasury is for the community to decide its distribution.
-            Existing token holders can vote on proposals through the DAO. Examples of use cases are incentivizing
-            liquidity, development, and marketing.
-            <br />
-          </p>
-          <p class="paragraph-show">
-            <strong>Liquidity Mining Pool (10%)</strong> - The liquidity on Honeyswap.
-            Fees generated from the liquidity pool act to draw more tokens
-            into the pool, which reduces the overall supply of Agave in circulation.
-            <br />
-          </p>
-          <p class="paragraph-show">
-            <strong>Community (8.4%)</strong> - Distribution to the 1Hive community in a fair launch based on the amount
-            of credibility of each contributor.
-            <br />
-          </p>
-          <p class="paragraph-show">
-            <strong>1Hive Staking (5%)</strong> - Staking into the security mechanism of the platform that will protect
-            it in the event of a shortfall.
-            Additionally, it will provide a revenue stream as the fees generated
-            from borrowers gets split between the stakers on the platform, and the treasury.<br />
-          </p>
-          <p class="paragraph-show">
-            <strong>Seeds (4.6%) </strong>- A very small amount of tokens will be distributed to the developers (seeds)
-            of Agave, which are slowly released over a 1 year period.<br />
-          </p>
-        </div>
-        <div class="block block-chart">
-          <div class="div-block-14">
-            <div class="html-embed-2 w-embed">
-				<div class="html-embed-2 w-embed">
-					<img class="chart" src="images/distribution-chart.svg" alt=".">
-					<br>
-					<img class="chart" src="images/distribution-chart_legend.svg" alt=".">
-					<!-- <div id="piechart_3d" style="display: block; margin: 0 auto; height: 500px; width: 60%;"></div> -->
-				</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+        <h2>Lending Market</h2>
+      </span>
+      <!-- Graph -->
+        <table style="width:100%" id="markets-table">
+          <tr class="token-header">
+            <td class="token-cell cell-header header-text">Asset</td>
+            <td class="token-cell cell-header header-text">Price</td>
+            <td class="token-cell cell-header header-text">Supply</td>
+            <td class="token-cell cell-header header-text">Utilization Rate</td>
+            <td class="token-cell cell-header header-text">Deposit Rate</td>
+            <td class="token-cell cell-header header-text">Variable APR</td>
+          </tr>
+        </table>
     </div>
   </div>
   <div class="body-section gradient-background">

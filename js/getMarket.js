@@ -93,7 +93,7 @@ function createRowFromTokenInfo(tokenInfo) {
     data: data,
     success: function(data) {
       data.data.reserves.forEach(token => {
-        document.getElementById("tokenomics-table").appendChild(createRowFromTokenInfo(token))
+        document.getElementById("markets-table").appendChild(createRowFromTokenInfo(token))
       })
     }
   });

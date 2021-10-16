@@ -38,10 +38,10 @@ function createRowFromTokenInfo(tokenInfo) {
   stableBorrowRate = parseFloat(tokenInfo.utilizationRate) * 100
   utilizationRateCell.innerText = stableBorrowRate.toFixed(2) + " %"
 
-  var stableBorrowCell = document.createElement("td")
-  stableBorrowCell.className = "token-cell token-text"
-  stableBorrowRate = parseInt(tokenInfo.stableBorrowRate, 10) / Math.pow(10, 25)
-  stableBorrowCell.innerText = stableBorrowRate.toFixed(2) + " %"
+  var liquidityRateCell = document.createElement("td")
+  liquidityRateCell.className = "token-cell token-text"
+  liquidityRate = parseInt(tokenInfo.liquidityRate, 10) / Math.pow(10, 25)
+  liquidityRateCell.innerText = liquidityRate.toFixed(3) + " %"
 
   var variableBorrowCell = document.createElement("td")
   variableBorrowCell.className = "token-cell token-text"
@@ -52,7 +52,7 @@ function createRowFromTokenInfo(tokenInfo) {
   tableRow.appendChild(priceCell)
   tableRow.appendChild(supplyCell)
   tableRow.appendChild(utilizationRateCell)
-  tableRow.appendChild(stableBorrowCell)
+  tableRow.appendChild(liquidityRateCell)
   tableRow.appendChild(variableBorrowCell)
 
 
@@ -93,7 +93,7 @@ function createRowFromTokenInfo(tokenInfo) {
     data: data,
     success: function(data) {
       data.data.reserves.forEach(token => {
-        document.getElementById("tokenomics-table").appendChild(createRowFromTokenInfo(token))
+        document.getElementById("markets-table").appendChild(createRowFromTokenInfo(token))
       })
     }
   });

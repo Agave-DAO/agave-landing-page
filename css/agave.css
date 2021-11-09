@@ -1778,3 +1778,8 @@ td.asset-cell {
 	  justify-self: start;
 	}
   }
+
+	#market-container {
+		padding-top: 30px;
+		padding-bottom: 90px;
+	}

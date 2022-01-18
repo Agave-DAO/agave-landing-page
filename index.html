@@ -6,15 +6,15 @@
     <meta charset="utf-8" />
     <title>Agave - DeFi lending protocol</title>
     <meta
-        content="It enables users to lend and borrow a diverse range of cryptocurrencies using fast and low-fee transactions of xDai."
+        content="It enables users to lend and borrow a diverse range of cryptocurrencies using fast and low-fee transactions of Gnosis."
         name="description" />
-    <meta content="Agave - DeFi lending protocol built on xDai" property="og:title" />
+    <meta content="Agave - DeFi lending protocol on Gnosis Chain" property="og:title" />
     <meta
-        content="It enables users to lend and borrow a diverse range of cryptocurrencies using fast and low-fee transactions of xDai."
+        content="It enables users to lend and borrow a diverse range of cryptocurrencies using fast and low-fee transactions of Gnosis."
         property="og:description" />
-    <meta content="Agave - DeFi lending protocol built on xDai" property="twitter:title" />
+    <meta content="Agave - DeFi lending protocol on Gnosis Chain" property="twitter:title" />
     <meta
-        content="It enables users to lend and borrow a diverse range of cryptocurrencies using fast and low-fee transactions of xDai."
+        content="It enables users to lend and borrow a diverse range of cryptocurrencies using fast and low-fee transactions of Gnosis."
         property="twitter:description" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://agave.finance/images/twitter-card.webp" />
@@ -38,6 +38,7 @@
                 ],
             },
         });
+        const currentURL = window.location.href;
     </script>
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
     <script type="text/javascript">
@@ -78,8 +79,11 @@
             </div>
             <div class="menu-links" id="myTopnav">
                 <a href="https://honeyswap.org/">Buy AGVE</a>
-                <a href="https://app.agave.finance/#/stake">Staking</a>
-                <a href="https://gardens-xdai.1hive.org/#/garden/0x2ec8db0b2f2ed44b75c481b864f9dd1c611699c0">Governance</a>
+                <script>
+                    document.write('<a href="https://app.' + currentURL + '/#/stake">Staking</a>');
+                </script>
+                <a
+                    href="https://gardens-xdai.1hive.org/#/garden/0x2ec8db0b2f2ed44b75c481b864f9dd1c611699c0">Governance</a>
                 <a href="./alvin">Alvin</a>
                 <a class="icon" onclick="toggleMenu()">
                     <span class="menuIcon material-icons">
@@ -94,7 +98,7 @@
             <div class="flexbox hero-flexbox">
                 <div class="left-block">
                     <h1 class="hero-heading">
-                        <span class="text-span">Agave is the DeFi lending protocol </span> on xDai
+                        <span class="text-span">Agave is the DeFi lending protocol </span> on Gnosis
                     </h1>
                     <div class="div-block-15">
                         <p class="paragraph-hide">
@@ -110,9 +114,9 @@
 
                     </div>
                     <div class="div-block-6">
-                        <a href="https://app.agave.finance/#/markets" class="button w-button stake-cta"><span
-                                class="stake-cta-text">Open App</span></a>
-                        </a>
+                        <script>
+                            document.write('<a href="https://app.' + currentURL + '/#/markets" class="button w-button stake-cta"><span class="stake-cta-text">Open App</span></a>');
+                        </script>
                     </div>
                 </div>
                 <div class="right-block">
@@ -146,9 +150,9 @@
                 <div class="section-item">
                     <img src="images/key_features_2.svg" alt="." />
                     <div class="content">
-                        <h4 class="item-title">xDai Native</h4>
+                        <h4 class="item-title">Gnosis Native</h4>
                         <span class="item-content">
-                            Build on xDai chain - Ethereum Layer 2 (EVM sidechain) to offer scalable, secure,
+                            Build on Gnosis chain - Ethereum Layer 2 (EVM sidechain) to offer scalable, secure,
                             inexpensive and almost
                             instant blockchain transactions.
                         </span>
@@ -194,9 +198,9 @@
                         <h2><strong>Partners and Integrations</strong></h2>
                     </div>
                     <div class="partners-images">
-                        <img src="images/1hive_bee.svg" alt="1hive" style="width: 20%;">
-                        <img src="images/xdai_logo.svg" alt="xDAI" style="width: 20%;">
+                        <img src="images/gnosis-chain.svg" alt="Gnosis" style="width: 15%;">
                         <img src="images/chainlink_logo.svg" alt="chainlink" style="width: 30%;">
+                        <img src="images/1hive_bee.svg" alt="1hive" style="width: 20%;">
                     </div>
                 </div>
             </div>
@@ -233,9 +237,9 @@
                         <div class="footer-column">
                             <div class="column-items">
                                 <div class="footer-col">
-                                    <a class="footer-anchor" href="https://app.agave.finance/#/stake">
-                                        <div class="footer-title">Staking</div>
-                                    </a>
+                                    <script>
+                                        document.write('<a href="https://app.' + currentURL + '/#/stake"><div class="footer-title">Staking</div></a>');
+                                    </script>
                                     <a class="footer-anchor" href="./alvin">
                                         <div class="footer-title">Alvin</div>
                                     </a>
